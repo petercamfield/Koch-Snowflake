@@ -1,7 +1,9 @@
 cs
 ht
-to drawSide :size :depth test :depth<1 iftrue[fd :size] iffalse[drawSide :size/3 :depth-1 lt 60 drawSide :size/3 :depth-1 rt 120 drawSide :size/3 :depth-1 lt 60 drawSide :size/3 :depth-1] end 
-to snowflake :size :depth repeat 3 [drawSide :size :depth rt 120] end 
+to drawSide :size :depth test :depth<1 iftrue[fd :size] iffalse[drawSide :size/3 :depth-1 lt 60 drawSide :size/3 :depth-1 rt 120 drawSide :size/3 :depth-1 lt 60 drawSide :size/3 :depth-1]
+end
+to snowflake :size :depth repeat 3 [drawSide :size :depth rt 120]
+end
 pu
 setxy -100 -200
 pd
